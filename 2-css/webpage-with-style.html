@@ -2,9 +2,47 @@
 <html>
     <head>
         <title>Webpage with style</title>
+        <style type="text/css">
+        .blue {
+            color: blue;
+        }
+        .big {
+            font-size: 100%;
+        }
+        #green {
+            color: green;
+        }
+        .underlined {
+            text-decoration: underline;
+        }
+        .first-section {
+            background: #EEEEEE;
+            width: 30%;
+            padding-top: 50px;
+            padding-right: 100px;
+            padding-bottom: 100px;
+            padding-left: 200px;
+        }
+        .second-section {
+            background: yellow;
+            width: 30%;
+        }
+        body {
+            margin: 0;
+            padding: 0;
+        }
+        </style>
     </head>
     <body>
-        <h1 style="color: green;">タイトル</h1>
-        <p style="color: blue;font-size: 90%;">今回は新しくリリースするプロダクトの紹介をします</p>
+        <div class="first-section">
+            <h1 class="blue">タイトル</h1>
+            <p class="blue">今回は新しくリリースするプロダクトの紹介をします</p>
+        </div>
+        <div class="second-section">
+            <p class="big">バーチャルリアリティーが体験できるVRゴーグルを発表します</p>
+            <p id="green">このVRゴーグルは従来品よりも<span class="underlined">解像度が高く</span>なっています。</p>
+        </div>
+
+        <p>Third paragragh</p>
     </body>
 </html>
