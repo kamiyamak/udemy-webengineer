@@ -2,47 +2,28 @@
 <html>
     <head>
         <title>Webpage with style</title>
+        <link href="<link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300&display=swap" rel="stylesheet">
         <style type="text/css">
-        .blue {
-            color: blue;
-        }
-        .big {
-            font-size: 100%;
-        }
-        #green {
-            color: green;
-        }
-        .underlined {
-            text-decoration: underline;
-        }
-        .first-section {
-            background: #EEEEEE;
-            width: 30%;
-            padding-top: 50px;
-            padding-right: 100px;
-            padding-bottom: 100px;
-            padding-left: 200px;
-        }
-        .second-section {
-            background: yellow;
-            width: 30%;
-        }
-        body {
-            margin: 0;
-            padding: 0;
-        }
+            p {
+                font-family: 'Noto Sans JP', sans-serif;
+            }
+            .welcome {
+                float: left;
+                background-color: lightgray;
+                margin: 10px;
+            }
+            .clear-float {
+                clear: both;
+            }
         </style>
     </head>
     <body>
-        <div class="first-section">
-            <h1 class="blue">タイトル</h1>
-            <p class="blue">今回は新しくリリースするプロダクトの紹介をします</p>
+        <div class="welcome">
+        <p>Welcome to ABCDE.com</p>
+        <iframe src="../1-html/promethe.png"></iframe>
         </div>
-        <div class="second-section">
-            <p class="big">バーチャルリアリティーが体験できるVRゴーグルを発表します</p>
-            <p id="green">このVRゴーグルは従来品よりも<span class="underlined">解像度が高く</span>なっています。</p>
-        </div>
-
-        <p>Third paragragh</p>
+        <div class="clear-float"></div>
+        <p>Here is a product infomation.</p>
     </body>
 </html>
