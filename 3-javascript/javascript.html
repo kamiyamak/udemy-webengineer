@@ -6,14 +6,13 @@
     </head>
     <body>
         <p id="text">Hello world!</p>
+        <button id="myButton">Change text</button>
 
         <script type="text/javascript">
-            // パラグラフのコンテンツを更新する処理
-            /*
-                getElementByIdはID名を指定してブロック要素を取り出します
-                innerHTMLはその中のコンテンツを取り出します
-            */
-            document.getElementById("text").innerHTML = "Hello Rob"
+            document.getElementById("myButton").onclick = function(){
+                // alert("Buttonがクリックされました");
+                document.getElementById("text").innerHTML = "クリックしましたね"
+            }
         </script>
     </body>
 </html>
