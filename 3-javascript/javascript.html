@@ -14,5 +14,28 @@
                 document.getElementById("text").innerHTML = "クリックしましたね"
             }
         </script>
+
+        <p id="secondParagraph"> Javascriptは、</p>
+        <button id="secondButton">追記する</button>
+
+        <p id="thirdParagraph">スタイル変更</p>
+        <button id="changeStyle">変更する</button>
+
+        <script type="text/javascript">
+            document.getElementById("secondButton").onclick = function(){
+               /* document.getElementById("secondParagraph").innerHTML = 
+                document.getElementById("secondParagraph").innerHTML + 
+                "ブラウザでもサーバサイドでも動作するプログラミング言語です";
+                */
+               // appendする
+                document.getElementById("secondParagraph").innerHTML += 
+                "ブラウザでもサーバサイドでも動作するプログラミング言語です";
+            }
+
+            document.getElementById("changeStyle").onclick = function(){
+                //document.getElementById("thirdParagraph").style.color = "red";
+                document.getElementById("thirdParagraph").style.display = "none";
+            }
+        </script>
     </body>
 </html>
