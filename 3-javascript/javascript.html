@@ -5,13 +5,15 @@
 
     </head>
     <body>
-        <button onclick="alert('Hi Rob!')">
-            Click Me!   
-        </button>
+        <p id="text">Hello world!</p>
 
         <script type="text/javascript">
-            alert("This is second message!");
+            // パラグラフのコンテンツを更新する処理
+            /*
+                getElementByIdはID名を指定してブロック要素を取り出します
+                innerHTMLはその中のコンテンツを取り出します
+            */
+            document.getElementById("text").innerHTML = "Hello Rob"
         </script>
-
     </body>
 </html>
