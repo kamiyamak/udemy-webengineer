@@ -7,27 +7,27 @@
         </style>
     </head>
     <body>
-        <p>暗号を入力</p>
-        <p><input type="text" id="magicWord"></p>
-        <p><button id="checkMagicWord">暗号をチェック</button></p>
-        <script type="text/javascript">
-        document.getElementById("checkMagicWord").onclick = function(){
-            var magicWordEntered = document.getElementById("magicWord").value;
-            var magicWord = "abura";
-            
-            if(magicWordEntered == magicWord) {
-                alert("OK");
-            } else {
-                alert("fail");
-            }
-        }
-        // var x = 2;
 
-        // if(x == 1){
-        //     alert("xは1です");
-        // } else {
-        //     alert("xは1ではない" + x + "です")
+        <div id="tweetsDiv">
+
+        </div>
+
+        <script type="text/javascript">
+
+        // for(var i = 5;i > 0;i--){
+        //     alert(i);
         // }
+
+        var tweets = ["Morning", "Good day", "Dinner", "night","nice deeam"];
+        var tweetString ="";
+
+        for(var i=0;i < tweets.length;i++){
+            // alert(tweets[i]);
+            tweetString = tweetString + "<p>" + tweets[i] + "</p>";
+        }
+
+        document.getElementById("tweetsDiv").innerHTML = tweetString;
+
         </script>
 
     </body>
