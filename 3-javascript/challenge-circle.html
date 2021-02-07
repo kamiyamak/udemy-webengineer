@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Javascript</title>
+        <style type="text/css">
+            #circle-red {
+                background-color: red;
+            }
+            .circle {
+                width: 200px;
+                height: 200px;
+                border-radius: 50%;
+                margin: 20px;
+                float: left;
+            }
+            .clear-float {
+                clear: both;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="circle-red" class="circle"></div>
+        <div class="clear-float"></div>
+
+        <!-- <p id="Paragraph"> 円を、</p>
+        <button id="deleteCircle">消す</button> -->
+
+        <script type="text/javascript">
+            document.getElementById("circle-red").onclick = function(){
+                document.getElementById("circle-red").style.display = "none";
+            }
+        </script>
+    </body>
+</html>
