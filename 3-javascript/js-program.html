@@ -21,9 +21,12 @@
         var tweets = ["Morning", "Good day", "Dinner", "night","nice deeam"];
         var tweetString ="";
 
-        for(var i=0;i < tweets.length;i++){
+        // for(var i=0;i < tweets.length;i++){
+        var i = 0;
+        while(i < tweets.length){
             // alert(tweets[i]);
             tweetString = tweetString + "<p>" + tweets[i] + "</p>";
+            i++;
         }
 
         document.getElementById("tweetsDiv").innerHTML = tweetString;
