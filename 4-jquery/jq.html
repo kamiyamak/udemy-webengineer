@@ -13,15 +13,7 @@
                 margin: 10px;
                 float: left;
             }
-            #square-red {
-                background-color: red;
-            }
-            .square {
-                width: 100px;
-                height: 100px;
-                margin: 10px;
-                float: left;
-            }
+
             .clear-float {
                 clear: both;
             }
@@ -30,24 +22,26 @@
     </head>
     <body>
         <div id="circle-green" class="circle"></div>
-        <div id="square-red" class="square"></div>
-        <div id="square-red" class="square"></div>
+
         <div class="clear-float"></div>
+
+        <p>ここに文章が入ります</p>
+
+        <iframe width="560" height="315" 
+        src="https://www.youtube.com/embed/wD-ehVDVkMo" 
+        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 
         <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js">
         </script> -->
         <script src="jquery-3.5.1.min.js"></script>
 
         <script type="text/javascript">
-            // $(".circle").click(function(){
-            //     alert("円がクリックされました");
-            // })
-            $("div").click(function(){
-                alert("divがクリックされました");
+            $("div").hover(function(){
+                $("iframe").attr("src","https://www.istyle.co.jp");
+                // alert($("p").html());
             })
-            // $(".square").click(function(){
-            //     alert("四角がクリックされました");
-            // })
+
 
         </script>
     </body>
