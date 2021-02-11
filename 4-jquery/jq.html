@@ -33,20 +33,19 @@
         <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js">
         </script> -->
         <script src="jquery-3.5.1.min.js"></script>
-
-        <p id="text">このテクストはtoggleします</p>
-        <button id="toggle">toggleする</button>
-        <p></p>
+        <div id="circle-green" class="circle"></div>
 
         <script type="text/javascript">
-            $("#toggle").click(function(){
+            $("#circle-green").click(function(){
+                $("#circle-green").animate({
+                    width:"400px",
+                    height:"400px",
+                    marginLeft:"100px"
+                },2000,function(){
+                    $("#circle-green").css("background-color","red");
+                });
+        })
 
-                if($("#text").css("display") == "none") {
-                    $("#text").fadeIn("slow");
-                } else {
-                    $("#text").fadeOut("slow");
-                }
-            })
         </script>
     </body>
 </html>
