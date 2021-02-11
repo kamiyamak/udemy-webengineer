@@ -19,6 +19,10 @@
                 background-color: blue;
             }
 
+            #fadeInText {
+                display: none;
+            }
+
             .clear-float {
                 clear: both;
             }
@@ -26,33 +30,23 @@
         </style>
     </head>
     <body>
-        <div id="circle-green" class="circle"></div>
-
-        <div class="square"></div>
-        <div class="square"></div>
-
-        <div class="clear-float"></div>
-
-
-
         <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js">
         </script> -->
         <script src="jquery-3.5.1.min.js"></script>
 
+        <p id="text">このテクストはtoggleします</p>
+        <button id="toggle">toggleする</button>
+        <p></p>
+
         <script type="text/javascript">
-            $("div").click(function(){
-                // alert("円がクリックされました");
-                // $(".circle").css("width","300px");
-                // $(".circle").css("height","300px");
-                // $("#circle-green").css("background-color","red");
+            $("#toggle").click(function(){
 
-                // alert($(".circle").css("width"));
-                // alert($(".circle").css("background-color"));
-
-                $(this).css("display","none");
+                if($("#text").css("display") == "none") {
+                    $("#text").fadeIn("slow");
+                } else {
+                    $("#text").fadeOut("slow");
+                }
             })
-
-
         </script>
     </body>
 </html>
