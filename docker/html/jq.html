@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JavaScript</title>
+        <style type="text/css">
+
+        </style>
+    </head>
+    <body>
+        <script src="jquery-3.5.1.min.js"></script>
+        <p></p>
+
+
+        <script type="text/javascript">
+            // $.get("info.txt",function(data){
+            //     alert(data);
+
+            // })
+            $.ajax("info.txt").done(function(data){
+                // alert(data);
+                $("p").html(data);
+            })
+            .fail(function(){
+                // alert("fail");
+                $("p").html("失敗");
+            })
+
+        </script>
+    </body>
+</html>
