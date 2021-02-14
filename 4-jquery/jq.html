@@ -5,7 +5,16 @@
         <link href="jquery-ui/jquery-ui.css" rel="stylesheet">
         <style type="text/css">
           #draggable { width: 150px; height: 150px; background-color: aqua; }
-
+          #container {
+              width: 800px;
+              height: 500px;
+              background-color: aquamarine;
+          }
+          #draggable2 {
+              width: 200px;
+              height: 100px;
+              background-color: coral;
+          }
         </style>
     </head>
     <body>
@@ -15,13 +24,18 @@
 
         <script type="text/javascript">
             $( function() {
-                $( "#draggable" ).draggable();
+                $( "#draggable" ).draggable({ axis: "y" });
+                // $( "#draggable" ).draggable({ axis: "y" });
+                $( "#draggable2" ).draggable({ containment: "parent" });
             } );
 
         </script>
 
         <div id="draggable">
             <p>Drag me around</p>
+        </div>
+        <div id="container">
+            <div id="draggable2">this div move</div>
         </div>
     </body>
 </html>
