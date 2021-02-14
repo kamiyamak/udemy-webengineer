@@ -4,18 +4,11 @@
         <title>JavaScript</title>
         <link href="jquery-ui/jquery-ui.css" rel="stylesheet">
         <style type="text/css">
-          #draggable { width: 150px; height: 150px; background-color: aqua; }
-          #container {
-              width: 800px;
-              height: 500px;
-              background-color: aquamarine;
-          }
-          #draggable2 {
-              width: 200px;
-              height: 100px;
-              background-color: coral;
-          }
-        </style>
+            #resizable { background-position: top left; }
+            #resizable, #also { width: 150px; height: 120px; padding: 0.5em; }
+            #resizable h3, #also h3 { text-align: center; margin: 0; }
+            #also { margin-top: 1em; }
+          </style>
     </head>
     <body>
 
@@ -24,18 +17,18 @@
 
         <script type="text/javascript">
             $( function() {
-                $( "#draggable" ).draggable({ axis: "y" });
-                // $( "#draggable" ).draggable({ axis: "y" });
-                $( "#draggable2" ).draggable({ containment: "parent" });
+                $( "#resizable" ).resizable({
+                alsoResize: "#also"
+                });
+                // $( "#also" ).resizable();
             } );
-
         </script>
 
-        <div id="draggable">
-            <p>Drag me around</p>
+        <div id="resizable" class="ui-widget-header">
+            <h3 class="ui-state-active">Resize</h3>
         </div>
-        <div id="container">
-            <div id="draggable2">this div move</div>
-        </div>
+        <div id="also" class="ui-widget-content">
+            <h3 class="ui-widget-header">will also resize</h3>
+          </div>
     </body>
 </html>
