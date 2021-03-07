@@ -1,28 +1,44 @@
 <?php
 
-$name = "Rob";
+$myArray = array("Rob","Kirstin","Tom","Ralph");
 
-echo $name;
+print_r($myArray); //print readable
 
-echo "<p>私の名前は".$name."です</p>";
-echo "<p>私の名前は${name}です</p>";
+echo "<br><br>";
 
-$myNumber = 45;
+echo $myArray[1];
 
-echo "<p>番号：${myNumber}</p>";
+echo "<br><br>";
 
-$calc = $myNumber * 31 / 97 + 4;
+$anotherArray[0] = "pizza";
+$anotherArray[1] = "chocolate";
+$anotherArray[5] = "coffee";
 
-echo "<p>計算結果：${calc}</p>";
+print_r($anotherArray);
 
-// Boolean true, false
+echo "<br><br>";
 
-$myBool = true;
+$anotherArray["myFavorite"] = "icecream";
 
-echo "<p>現在${myBool}です</p>";
+print_r($anotherArray);
 
-$myBool = false;
+$thirdArray = array("Flance" => "French",
+                "USA" => "English",
+                "Germany" => "German");
 
-echo "<p>現在${myBool}です</p>";
+echo "<br><br>";
+
+print_r($thirdArray);
+echo "<br><br>";
+
+echo sizeof($thirdArray);
+
+unset($thirdArray["Flance"]);
+echo "<br><br>";
+
+echo sizeof($thirdArray);
+
+print_r($thirdArray);
+
 
 ?>
