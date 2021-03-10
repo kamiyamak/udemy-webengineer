@@ -1,18 +1,18 @@
 <?php
 
-if($_POST){
-    echo "こんにちは,".$_POST['name']."さん";
-} else {
+// mail()
+$emailTo = "";
+$subject = "hey";
+$body = "教えてください。";
+$headers ="";
 
+if(mail($emailTo, $subject, $body, $headers)){
+    echo "成功";
+} else {
+    echo "失敗";
 }
-// print_r($_GET);
 
 echo "<br><br>";
 
 ?>
 
-<p>名前を入力</p>
-<form method="post">
-    <input type="text" name="name">
-    <input type="submit" value="送信する">
-</form>
