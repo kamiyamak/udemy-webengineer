@@ -5,8 +5,11 @@
         die("失敗しました");
     }
 
-    // $query = "SELECT * from users WHERE id = 1";
-    $query = "SELECT * from users WHERE name LIKE 'K%'";
+    $name = "Rob O'Grady";
+    $query = "SELECT * from users WHERE name = '".mysqli_real_escape_string($link,$name)."'";
+
+    echo $query;
+    echo "<p>";
     if($result = mysqli_query($link,$query)) {
         // echo "Insert成功しました";
     }
