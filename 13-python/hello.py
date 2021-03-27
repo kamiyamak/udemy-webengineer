@@ -59,34 +59,42 @@ print ''
 # print dict.keys()
 # print dict.values()
 
-for i in range(5,11):
-    print i
+# for i in range(5,11):
+#     print i
     
-print "rob"
+# print "rob"
 
-print "<br>"
+# print "<br>"
 
-list = ["pizza","chocolate","icecream"]
+# list = ["pizza","chocolate","icecream"]
 
-# i like eating ***
+# # i like eating ***
 
-for food in list:
-    print "I like eating " + food + "."
-    print "<br>"
+# for food in list:
+#     print "I like eating " + food + "."
+#     print "<br>"
 
-x = 0
-while x <= 10:
-    print x
-    x = x + 1
-    # x += 1
+# x = 0
+# while x <= 10:
+#     print x
+#     x = x + 1
+#     # x += 1
 
-print "<br>"
+# print "<br>"
 
-ages = {}
-ages["Rob"] = 35
-ages["Kirstin"] = 36
-ages["Tom"] = 5
-ages["raph"] = 1
+# ages = {}
+# ages["Rob"] = 35
+# ages["Kirstin"] = 36
+# ages["Tom"] = 5
+# ages["raph"] = 1
 
-for age in ages:
-    print age + " is " + str(ages[age]) + "."
+# for age in ages:
+#     print age + " is " + str(ages[age]) + "."
+
+name = "rob"
+
+if name == "rob" or name == "Kirstin":
+    print "hello " + name + "!"
+else:
+    print "I don't know"
+
